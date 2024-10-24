@@ -1,9 +1,8 @@
 /* ================ ROOT VARIABLES ================ */
 
 :root {
-    --color-primary: #7380ec;
-    --color-danger: #ff7782;
-    --color-success: #41f1b6;
+    --color-warning2: #82d7da;
+    --color-success: #ececec;
     --color-warning: #a8dadc;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
@@ -13,7 +12,7 @@
     --color-primary-variant: #111e88;
     --color-dark-variant: #a0a3a6;
     --color-background: #f6f6f9;
-    
+
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --border-radius-2: 0.8rem;
@@ -30,10 +29,13 @@
 .dark-theme-variables {
     --color-background: #181a1e;
     --color-white: #202528;
+    --color-success: rgba(132, 139, 200, 0.18);
+    --color-warning: #ffbb55;
+    --color-warning2: #e29a2e;
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
-    --box-shadow: o 2rem 3rem var(--color-light);
+    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 
@@ -81,19 +83,21 @@ a {
     background: var(--color-warning);
 }
 
-.active {
-    background-color: #ececec;
+.activa {
+    background-color: var(--color-success);
 }
 
 .header-top button {
     padding: 0.5rem;
     cursor: pointer;
+    color: var(--color-dark);
+    background: var(--color-success);
     border: solid 1px var(--color-dark);
     border-radius: var(--border-radius-1);
 }
 
 .header-top button:hover {
-    background-color: #e5e5e5;
+    background-color: var(--color-success);
 }
 
 #main-header .theme-toggler {
@@ -132,6 +136,11 @@ a {
     background-size: cover;
     text-align: center;
 }
+
+.dark-theme-variables .header-bottom {
+    background-image: url(../img/pexels-coleito-3144214.jpg);
+}
+
 .header-bottom h1 {
     font-size: 40px;
     padding-top: 130px;
@@ -144,6 +153,8 @@ a {
     width: 200px;
     height: 40px;
     border-radius: 2px;
+    font-size: 18px;
+    color: var(--color-dark);
     transition: all 300ms ease;
 }
 
@@ -179,7 +190,7 @@ a {
     background: var(--color-white);
 }
 
-#main-section h1{
+#main-section h1 {
     font-size: 2rem;
 }
 
@@ -188,49 +199,68 @@ a {
 #about-section {
     width: 100%;
     height: 450px;
-    background: var(--color-background);
+    background: var(--color-warning);
+    color: black;
     text-align: center;
 }
+
 #about-section .about-info {
     font-size: 18px;
     padding: 40px;
 }
+
 #about-section .features {
     width: 21%;
     padding: 5px;
     display: inline-block;
 }
+
 #about-section i {
     padding-bottom: 30px;
 }
+
 .headings {
     padding-bottom: 15px;
 }
+
 /*================= For extra information =================*/
+
+#quans {
+    width: 100%;
+    height: 600px;
+    background: var(--color-white);
+    color: var(--color-dark);
+}
 
 #quans .questions {
     padding: 50px;
     text-align: center;
 
 }
+
 #quans .raws {
     width: 40%;
     display: inline-block;
     padding: 40px 65px;
 }
+
 /*==================== MORE SECTION ====================*/
 #repeat {
     width: 100%;
     height: 230px;
+    background: var(--color-white);
+    color: var(--color-dark);
 }
+
 .container3 {
     width: 70%;
     height: 100px;
     background: var(--color-background);
     padding: 15px;
     border-radius: 5px;
-    margin: 80px 0 0 175px;
+    margin: 0 0 0 175px;
 }
+
 .btn {
     float: right;
     background-color: var(--color-warning);
@@ -242,11 +272,13 @@ a {
     border-radius: 5px;
     text-align: center;
 }
+
 .btn a {
     color: white;
 }
+
 .btn:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-warning2);
 }
 
 /*======================= MAIN FOOTER ========================*/
@@ -255,22 +287,27 @@ a {
     height: 220px;
     background: var(--color-background);
 }
+
 #main-footer .container {
     display: inline-block;
     padding: 20px 0 20px 20px;
     color: var(--color-dark);
 }
+
 #main-footer .for-hs {
     padding: 10px;
 }
+
 #main-footer .for-cnt {
     width: 28%;
     display: inline-block;
 }
+
 #main-footer .icons {
     width: 15%;
     display: inline-block;
 }
+
 #main-footer .widget {
     width: 50%;
     display: inline-block;
