@@ -87,7 +87,8 @@ a {
 .header-top button {
     padding: 0.5rem;
     cursor: pointer;
-    border: solid 1px var(--color-dark, --border-radius-1);
+    border: solid 1px var(--color-dark);
+    border-radius: var(--border-radius-1);
 }
 
 #main-header .theme-toggler {
@@ -114,3 +115,6 @@ a {
     width: 50%;
     border-radius: var(--border-radius-1);
 }
+
+/* ================ HEADER BOTTOM SECTION ================ */
+
