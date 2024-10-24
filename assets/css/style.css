@@ -11,7 +11,7 @@
     --color-dark: black;
     --color-light: rgba(132, 139, 200, 0.18);
     --color-primary-variant: #111e88;
-    --color-dark-variant: #677483;
+    --color-dark-variant: #a0a3a6;
     --color-background: #f6f6f9;
     
     --card-border-radius: 2rem;
@@ -126,7 +126,7 @@ a {
 .header-bottom {
     width: 100%;
     height: 500px;
-    background-image: url(../img/5246832955211505862.jpg);
+    background-image: url(../img/pexels-candis-hidalgo-23771-639110.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -138,7 +138,7 @@ a {
     line-height: 5rem;
 }
 
-.btn {
+.btn5 {
     margin-top: 2rem;
     cursor: pointer;
     width: 200px;
@@ -176,8 +176,102 @@ a {
     padding-top: 3rem;
     line-height: 2rem;
     color: var(--color-dark);
+    background: var(--color-white);
 }
 
 #main-section h1{
     font-size: 2rem;
+}
+
+/* ================== ABOUT SECTION ================== */
+
+#about-section {
+    width: 100%;
+    height: 450px;
+    background-color: #e0dddd;
+    text-align: center;
+}
+#about-section .about-info {
+    font-size: 18px;
+    padding: 40px;
+}
+#about-section .features {
+    width: 21%;
+    padding: 5px;
+    display: inline-block;
+}
+#about-section i {
+    padding-bottom: 30px;
+}
+.headings {
+    padding-bottom: 15px;
+}
+/*================= For extra information =================*/
+
+#quans .questions {
+    padding: 50px;
+    text-align: center;
+
+}
+#quans .raws {
+    width: 40%;
+    display: inline-block;
+    padding: 40px 65px;
+}
+/*==================== MORE SECTION ====================*/
+#repeat {
+    width: 100%;
+    height: 230px;
+}
+.container3 {
+    width: 70%;
+    height: 100px;
+    background-color: rgb(232, 232, 232);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 80px 0 0 175px;
+}
+.btn {
+    float: right;
+    background-color: orange;
+    width: 110px;
+    padding: 10px;
+    margin-top: 5px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn a {
+    color: white;
+}
+.btn:hover {
+    background-color: rgb(233, 152, 3);
+}
+
+/*======================= MAIN FOOTER ========================*/
+#main-footer {
+    width: 100%;
+    height: 220px;
+    background: var(--color-background);
+}
+#main-footer .container {
+    display: inline-block;
+    padding: 20px 0 20px 20px;
+    color: var(--color-dark);
+}
+#main-footer .for-hs {
+    padding: 10px;
+}
+#main-footer .for-cnt {
+    width: 28%;
+    display: inline-block;
+}
+#main-footer .icons {
+    width: 15%;
+    display: inline-block;
+}
+#main-footer .widget {
+    width: 50%;
+    display: inline-block;
 }
