@@ -51,7 +51,7 @@ a {
 
 #main-header {
     width: 100%;
-    height: 800px;
+    height: 580px;
 }
 
 .header-top {
@@ -91,6 +91,10 @@ a {
     border-radius: var(--border-radius-1);
 }
 
+.header-top button:hover {
+    background-color: #e5e5e5;
+}
+
 #main-header .theme-toggler {
     background-color: var(--color-light);
     display: flex;
@@ -118,3 +122,46 @@ a {
 
 /* ================ HEADER BOTTOM SECTION ================ */
 
+.header-bottom {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/5246832955211505862.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.header-bottom h1 {
+    font-size: 40px;
+    padding-top: 130px;
+    line-height: 5rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    transition: all 300ms ease;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid var(--color-dark);
+}
+
+.orange {
+    background-color: orange;
+    border: none;
+}
+
+.transparent:hover {
+    background-color: orange;
+    border: none;
+}
+
+.orange:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-dark);
+}
